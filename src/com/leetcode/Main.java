@@ -3,10 +3,8 @@ package com.leetcode;
 public class Main {
 
     public static void main(String[] args) {
-        Permutation permutation = new Permutation();
-        String[] res = permutation.permutation("abc");
-        for (String s : res) {
-            System.out.println(s);
-        }
+        int[] array = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.bubbleSort(array);
     }
 }
