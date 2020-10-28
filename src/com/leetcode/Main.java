@@ -1,13 +1,12 @@
 package com.leetcode;
 
+import com.leetcode.utils.PrintUtils;
+
 public class Main {
 
     public static void main(String[] args) {
-        SwapNumbers swapNumbers = new SwapNumbers();
-        int[] nums = {1, 2};
-        swapNumbers.swapNumbers(nums);
-        for (int n : nums) {
-            System.out.println(n);
-        }
+        int[] nums = {2,5,1,3,4,7};
+        Shuffle shuffle = new Shuffle();
+        PrintUtils.printIntArray(shuffle.shuffle(nums, 3));
     }
 }
