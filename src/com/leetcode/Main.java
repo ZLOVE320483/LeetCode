@@ -1,12 +1,11 @@
 package com.leetcode;
 
-import com.leetcode.utils.PrintUtils;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {2,5,1,3,4,7};
-        Shuffle shuffle = new Shuffle();
-        PrintUtils.printIntArray(shuffle.shuffle(nums, 3));
+        int[] rating = {1,2,3,4};
+        NumTeams teams = new NumTeams();
+        System.out.println(teams.numTeams(rating));
     }
 }
