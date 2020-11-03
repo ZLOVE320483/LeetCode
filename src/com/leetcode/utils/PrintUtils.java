@@ -1,5 +1,7 @@
 package com.leetcode.utils;
 
+import java.util.List;
+
 public class PrintUtils {
 
     public static void printIntArray(int[] array) {
@@ -9,6 +11,16 @@ public class PrintUtils {
             builder.append(", ");
         }
         builder.append(array[array.length - 1]);
+        System.out.println(builder.toString());
+    }
+
+    public static void printIntList(List<Integer> list) {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < list.size() - 1; i++) {
+            builder.append(list.get(i));
+            builder.append(", ");
+        }
+        builder.append(list.get(list.size() - 1));
         System.out.println(builder.toString());
     }
 }
