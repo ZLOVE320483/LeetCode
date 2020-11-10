@@ -1,7 +1,5 @@
 package com.leetcode;
 
-import java.util.Arrays;
-
 /**
  * https://leetcode-cn.com/problems/next-permutation/
  */
