@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * https://leetcode-cn.com/problems/permutation-i-lcci/
+ */
 public class Permutation {
     List<String> res = new LinkedList<>();
     char[] c;

@@ -15,6 +15,10 @@ public class PrintUtils {
     }
 
     public static void printIntList(List<Integer> list) {
+        if (list.size() == 0) {
+            System.out.println("[ ]");
+            return;
+        }
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < list.size() - 1; i++) {
             builder.append(list.get(i));
