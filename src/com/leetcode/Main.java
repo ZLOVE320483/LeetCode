@@ -1,11 +1,14 @@
 package com.leetcode;
 
-import java.util.List;
+import com.leetcode.sort.InsertSort;
+import com.leetcode.utils.PrintUtils;
 
 public class Main {
 
     public static void main(String[] args) {
-        NumberOfSteps steps = new NumberOfSteps();
-        System.out.println(steps.numberOfSteps(123));
+        int[] array = {1, 4, 6, 3, 5, 0, 9};
+        InsertSort sort = new InsertSort();
+        sort.insetSort(array);
+        PrintUtils.printIntArray(array);
     }
 }
