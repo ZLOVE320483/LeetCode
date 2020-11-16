@@ -1,14 +1,10 @@
 package com.leetcode;
 
-import com.leetcode.utils.PrintUtils;
-
 public class Main {
 
     public static void main(String[] args) {
-
-        int[] arr1 = {26,21,11,20,50,34,1,18};
-        QuickSort quickSort = new QuickSort();
-        quickSort.quickSort(arr1, 0, arr1.length - 1);
-        PrintUtils.printIntArray(arr1);
+        int[] arr1 = {9,8,7,6,5,1,2,3,4};
+        MaxCoins coins = new MaxCoins();
+        System.out.println(coins.maxCoins(arr1));
     }
 }
