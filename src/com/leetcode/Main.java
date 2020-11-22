@@ -1,11 +1,13 @@
 package com.leetcode;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
-        int[] birth = {1900, 1901, 1950};
-        int[] death = {1948, 1951, 2000};
-        MaxAliveYear year = new MaxAliveYear();
-        System.out.println(year.maxAliveYear(birth, death));
+        int[] candidates = {2, 3, 6, 7};
+        CombinationSum sum = new CombinationSum();
+        List<List<Integer>> res = sum.combinationSum(candidates, 7);
+        System.out.println("res ---> " + res);
     }
 }
