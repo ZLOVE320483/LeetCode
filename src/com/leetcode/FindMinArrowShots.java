@@ -1,7 +1,5 @@
 package com.leetcode;
 
-import com.leetcode.utils.PrintUtils;
-
 import java.util.Arrays;
 
 /**

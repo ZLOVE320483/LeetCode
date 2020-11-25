@@ -1,12 +1,12 @@
 package com.leetcode;
 
+import com.leetcode.tree.bst.SortedArrayToBST;
+
 public class Main {
 
     public static void main(String[] args) {
-        int[][] points = {
-                {10,16},{2,8},{1,6},{7,12}
-        };
-        FindMinArrowShots shots = new FindMinArrowShots();
-        System.out.println(shots.findMinArrowShots(points));
+        int[] nums = {-10,-3,0,5,9};
+        SortedArrayToBST bst = new SortedArrayToBST();
+        bst.sortedArrayToBST(nums);
     }
 }
