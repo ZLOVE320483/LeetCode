@@ -1,13 +1,13 @@
 package com.leetcode;
 
-import com.leetcode.bfs.OpenLock;
+import com.leetcode.binarysearch.SearchRange;
+import com.leetcode.utils.PrintUtils;
 
 public class Main {
 
     public static void main(String[] args) {
-        String[] deadends = {"0201","0101","0102","1212","2002"};
-        String target = "0202";
-        OpenLock openLock = new OpenLock();
-        System.out.println(openLock.openLock(deadends, target));
+        int[] nums = {5,7,7,8,8,10};
+        SearchRange range = new SearchRange();
+        PrintUtils.printIntArray(range.searchRange(nums, 6));
     }
 }
