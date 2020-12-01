@@ -1,12 +1,12 @@
 package com.leetcode;
 
-import com.leetcode.dp.MaxProfitI;
+import com.leetcode.dp.MaxProfitII;
 
 public class Main {
 
     public static void main(String[] args) {
         int[] prices = {7,1,5,3,6,4};
-        MaxProfitI i = new MaxProfitI();
-        System.out.println(i.maxProfit(prices));
+        MaxProfitII ii = new MaxProfitII();
+        System.out.println(ii.maxProfit(prices));
     }
 }
