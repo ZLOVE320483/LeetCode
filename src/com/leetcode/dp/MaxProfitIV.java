@@ -1,6 +1,6 @@
 package com.leetcode.dp;
 
-public class MaxProfitIIII {
+public class MaxProfitIV {
 
     public int maxProfit(int[] prices, int fee) {
         int n = prices.length;
