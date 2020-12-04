@@ -1,27 +1,20 @@
 package com.leetcode;
 
-import com.leetcode.dp.MaxProfitV;
+import com.leetcode.interval.MergeInterval;
 import com.leetcode.utils.PrintUtils;
-
-import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
         int[][] intervals = {
                 {1, 4},
-                {3, 6},
-                {2, 8}
+                {1, 5}
         };
 
-        Arrays.sort(intervals, (a, b) -> {
-            if (a[0] == b[0]) {
-                return b[1] - a[1];
-            }
-            return a[0] - b[0];
-        });
+        MergeInterval interval = new MergeInterval();
+        int[][] res = interval.merge(intervals);
 
-        for (int[] arr : intervals) {
+        for (int[] arr : res) {
             PrintUtils.printIntArray(arr);
         }
     }

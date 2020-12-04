@@ -2,6 +2,9 @@ package com.leetcode.interval;
 
 import java.util.Arrays;
 
+/**
+ * https://leetcode-cn.com/problems/remove-covered-intervals/
+ */
 public class RemoveCoveredIntervals {
 
     public int removeCoveredIntervals(int[][] intervals) {
