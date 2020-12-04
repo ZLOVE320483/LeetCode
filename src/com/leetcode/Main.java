@@ -1,18 +1,20 @@
 package com.leetcode;
 
-import com.leetcode.interval.MergeInterval;
+import com.leetcode.interval.IntervalIntersection;
 import com.leetcode.utils.PrintUtils;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[][] intervals = {
-                {1, 4},
-                {1, 5}
+        int[][] A = {
+                {0,2},{5,10},{13,23},{24,25}
+        };
+        int[][] B = {
+                {1,5},{8,12},{15,24},{25,26}
         };
 
-        MergeInterval interval = new MergeInterval();
-        int[][] res = interval.merge(intervals);
+        IntervalIntersection interval = new IntervalIntersection();
+        int[][] res = interval.intervalIntersection(A, B);
 
         for (int[] arr : res) {
             PrintUtils.printIntArray(arr);
