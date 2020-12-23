@@ -1,12 +1,12 @@
 package com.leetcode;
 
-import com.leetcode.sort_test.MergeSort;
-import com.leetcode.utils.PrintUtils;
+import com.leetcode.dp.CanPartition;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {1, 0, -1, 0, -2, 2, 5, 7, 9, 8};
-        PrintUtils.printIntArray(MergeSort.sort(nums));
+        int[] nums = {1, 2, 3, 6};
+        CanPartition partition = new CanPartition();
+        System.out.println(partition.canPartition(nums));
     }
 }
