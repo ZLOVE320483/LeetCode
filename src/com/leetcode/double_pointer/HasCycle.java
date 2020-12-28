@@ -12,7 +12,7 @@ public class HasCycle {
 
         ListNode slow = head;
         ListNode quick = head;
-        while (slow != null && quick != null && quick.next != null) {
+        while (quick != null && quick.next != null) {
             slow = slow.next;
             quick = quick.next.next;
             if (slow == quick) {
