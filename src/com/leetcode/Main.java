@@ -1,12 +1,18 @@
 package com.leetcode;
 
-import com.leetcode.dp.CanPartition;
+import com.leetcode.backtrack.BackTrackPermute;
+import com.leetcode.utils.PrintUtils;
+
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 6};
-        CanPartition partition = new CanPartition();
-        System.out.println(partition.canPartition(nums));
+        int[] nums = {1, 2, 3};
+        BackTrackPermute permute = new BackTrackPermute();
+        List<List<Integer>> res = permute.permute(nums);
+        for (List<Integer> list : res) {
+            PrintUtils.printIntList(list);
+        }
     }
 }
