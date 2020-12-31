@@ -1,18 +1,12 @@
 package com.leetcode;
 
-import com.leetcode.backtrack.BackTrackPermute;
-import com.leetcode.utils.PrintUtils;
-
-import java.util.List;
+import com.leetcode.sort.FindKthLargest;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
-        BackTrackPermute permute = new BackTrackPermute();
-        List<List<Integer>> res = permute.permute(nums);
-        for (List<Integer> list : res) {
-            PrintUtils.printIntList(list);
-        }
+        int[] nums = {3, 2, 1, 5, 6, 4};
+        FindKthLargest largest = new FindKthLargest();
+        System.out.println(largest.findKthLargest(nums, 2));
     }
 }
