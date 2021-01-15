@@ -1,17 +1,16 @@
 package com.zlove.leetcode;
 
 import com.leetcode.utils.PrintUtils;
-import com.zlove.leetcode.backtrace.AllTraverse;
+import com.zlove.leetcode.backtrace.NQueens;
 
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] coins = {1, 2, 5, 3};
-        List<List<Integer>> res = AllTraverse.permute(coins);
-        for (List<Integer> list : res) {
-            PrintUtils.printIntList(list);
+        List<List<String>> res = NQueens.solveNQueens(4);
+        for (List<String> list : res) {
+            PrintUtils.printStringList(list);
         }
         System.out.println(res.size());
     }
