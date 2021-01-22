@@ -1,11 +1,13 @@
 package com.zlove.leetcode;
 
-import com.zlove.leetcode.binary_search.BinarySearch;
+import com.leetcode.utils.PrintUtils;
+import com.zlove.leetcode.sort.SelectSort;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {-1,0,3,5,9,12};
-        System.out.println(BinarySearch.binarySearch(nums, 1));
+        int[] nums = {13,0,3,2,87,12};
+        SelectSort.sort(nums);
+        PrintUtils.printIntArray(nums);
     }
 }
