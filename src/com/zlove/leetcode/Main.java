@@ -2,7 +2,6 @@ package com.zlove.leetcode;
 
 import com.leetcode.utils.PrintUtils;
 import com.zlove.leetcode.sort.QuickSort;
-import com.zlove.leetcode.sort.SelectSort;
 
 public class Main {
 
