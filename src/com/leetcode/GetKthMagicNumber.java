@@ -2,7 +2,7 @@ package com.leetcode;
 
 public class GetKthMagicNumber {
 
-    public int getKthMagicNumber(int k) {
+    public static int getKthMagicNumber(int k) {
        int[] res = new int[k];
        res[0] = 1;
        int index3 = 0, index5 = 0, index7 = 0;

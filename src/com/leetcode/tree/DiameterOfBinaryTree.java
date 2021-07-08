@@ -1,5 +1,9 @@
 package com.leetcode.tree;
 
+
+/**
+ * https://leetcode-cn.com/problems/diameter-of-binary-tree/
+ */
 public class DiameterOfBinaryTree {
     int max = 0;
     public int diameterOfBinaryTree(TreeNode root) {
